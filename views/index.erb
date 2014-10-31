@@ -1,0 +1,28 @@
+<html>
+<head>
+  <style>
+  .centered {
+    width: 100%;
+    margin-top: 200px;
+    text-align: center;
+  }
+  * {
+    font-family: monospaced;
+  }
+</style>
+</head>
+<body>
+  <div class="centered">
+    <h1><%= @date %></h1>
+    <% while @bucle < 11 %>
+    <span>I am a <%= @bucle %></span>
+    <% @bucle += 1
+    end %>
+  </div>
+  <div class="centered">
+    <form action="ascii" method="POST">
+      Please, input your name: <input name="username" type="text" autofocus="autofocus" />
+    </form>
+  </div>
+</body>
+</html>
